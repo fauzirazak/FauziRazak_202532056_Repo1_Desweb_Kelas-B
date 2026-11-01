@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 200" width="600" height="200">
+<rect width="600" height="200" fill="#f1f8e9"/>
+<g font-family="sans-serif" font-size="15" text-anchor="middle" fill="#1b5e20">
+<ellipse cx="70" cy="90" rx="30" ry="22" fill="#c5e1a5" stroke="#33691e"/><text x="70" y="140">Telur</text>
+<ellipse cx="215" cy="90" rx="45" ry="16" fill="#aed581" stroke="#33691e"/><text x="215" y="140">Larva</text>
+<ellipse cx="365" cy="90" rx="30" ry="26" fill="#9ccc65" stroke="#33691e"/><text x="365" y="140">Pupa</text>
+<ellipse cx="520" cy="90" rx="40" ry="18" fill="#fff59d" stroke="#f9a825"/><text x="520" y="140">Dewasa</text>
+</g>
+<g stroke="#33691e" stroke-width="2" fill="none"><path d="M105 90 H165"/><path d="M265 90 H330"/><path d="M400 90 H470"/></g>
+</svg>
