@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lapor Pengamatan | Kunang-Kunang Watch</title>
+</head>
+<body>
+  <header>
+    <p><strong>Kunang-Kunang Watch</strong></p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="artikel.html">Artikel</a></li>
+        <li><a href="etika.html">Etika Pengamatan</a></li>
+        <li><a href="lapor.html">Lapor Pengamatan</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Formulir Lapor Pengamatan</h1>
+    <p>Isi formulir berikut berdasarkan pengamatanmu. Kolom bertanda <strong>wajib</strong> harus diisi.</p>
+
+    <form action="terima-kasih.html" method="get">
+      <fieldset>
+        <legend>Data Pelapor</legend>
+        <p>
+          <label for="nama">Nama (wajib)</label><br>
+          <input type="text" id="nama" name="nama" placeholder="Nama lengkap" minlength="3" required>
+        </p>
+        <p>
+          <label for="email">Email (wajib)</label><br>
+          <input type="email" id="email" name="email" placeholder="nama@contoh.com" required>
+        </p>
+      </fieldset>
+
+      <fieldset>
+        <legend>Data Pengamatan</legend>
+        <p>
+          <label for="tanggal">Tanggal pengamatan (wajib)</label><br>
+          <input type="date" id="tanggal" name="tanggal" required>
+        </p>
+        <p>
+          <label for="lokasi">Lokasi pengamatan (wajib)</label><br>
+          <input type="text" id="lokasi" name="lokasi" placeholder="Contoh: tepi sungai desa X" required>
+        </p>
+        <p>
+          <label for="jumlah">Perkiraan jumlah kunang-kunang (wajib)</label><br>
+          <input type="number" id="jumlah" name="jumlah" min="1" max="10000" required>
+        </p>
+        <p>
+          <label for="waktu">Waktu pengamatan (wajib)</label><br>
+          <select id="waktu" name="waktu" required>
+            <option value="">-- Pilih waktu --</option>
+            <option value="senja">Senja (18.00 - 19.00)</option>
+            <option value="malam-awal">Malam awal (19.00 - 21.00)</option>
+            <option value="malam-larut">Malam larut (21.00 - 24.00)</option>
+            <option value="dini-hari">Dini hari (setelah 24.00)</option>
+          </select>
+        </p>
+
+        <p>Jenis habitat (wajib):</p>
+        <p>
+          <input type="radio" id="habitat-sungai" name="habitat" value="sungai" required>
+          <label for="habitat-sungai">Tepi sungai / perairan</label><br>
+          <input type="radio" id="habitat-mangrove" name="habitat" value="mangrove">
+          <label for="habitat-mangrove">Hutan mangrove</label><br>
+          <input type="radio" id="habitat-sawah" name="habitat" value="sawah">
+          <label for="habitat-sawah">Sawah / kebun</label><br>
+          <input type="radio" id="habitat-hutan" name="habitat" value="hutan">
+          <label for="habitat-hutan">Hutan / semak</label>
+        </p>
+
+        <p>Kondisi saat pengamatan:</p>
+        <p>
+          <input type="checkbox" id="kondisi-gelap" name="kondisi" value="gelap">
+          <label for="kondisi-gelap">Area minim lampu</label><br>
+          <input type="checkbox" id="kondisi-cerah" name="kondisi" value="cerah">
+          <label for="kondisi-cerah">Langit cerah</label><br>
+          <input type="checkbox" id="kondisi-lembap" name="kondisi" value="lembap">
+          <label for="kondisi-lembap">Udara lembap</label>
+        </p>
+
+        <p>
+          <label for="catatan">Catatan tambahan</label><br>
+          <textarea id="catatan" name="catatan" rows="4" cols="40" maxlength="300" placeholder="Ceritakan pola kedipan atau hal menarik lainnya"></textarea>
+        </p>
+      </fieldset>
+
+      <p>
+        <input type="checkbox" id="setuju" name="setuju" value="ya" required>
+        <label for="setuju">Saya menyatakan data ini berdasarkan pengamatan sebenarnya (wajib)</label>
+      </p>
+
+      <p>
+        <button type="submit">Kirim Laporan</button>
+        <button type="reset">Hapus Isian</button>
+      </p>
+    </form>
+  </main>
+
+  <footer>
+    <hr>
+    <p>&copy; 2026 Kunang-Kunang Watch &ndash; Proyek Praktikum Desain Web (Laporan Praktik 1).</p>
+    <p><a href="index.html">Beranda</a> | <a href="artikel.html">Artikel</a> | <a href="etika.html">Etika Pengamatan</a> | <a href="lapor.html">Lapor Pengamatan</a></p>
+  </footer>
+</body>
+</html>
